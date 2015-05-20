@@ -10,6 +10,8 @@
  *
  * @author Silvia
  */
+
+
 class UtenteRegistrato {
     private $Nome;
     private $Cognome;
@@ -17,7 +19,15 @@ class UtenteRegistrato {
     private $Password;
     private $email;
     private $ProdottiOsservati;
-    
+    /**
+     * 
+     * @param type $Nome
+     * @param type $Cognome
+     * @param type $Username
+     * @param type $Password
+     * @param type $email
+     * @param type $ProdottiOsservati
+     */
     function __construct($Nome, $Cognome, $Username, $Password, $email, $ProdottiOsservati) {
         $this->Nome = $Nome;
         $this->Cognome = $Cognome;
@@ -27,57 +37,91 @@ class UtenteRegistrato {
         $this->ProdottiOsservati = $ProdottiOsservati;
     }
 
-    
+    /**
+     * 
+     * @return string
+     */
     public function getNome() {
         return $this->Nome;
     }
-
+    /**
+     * 
+     * @param string $Nome
+     */
     public function setNome($Nome) {
         $this->Nome = $Nome;
     }
-
+    /**
+     * 
+     * @return string
+     */
     public function getCognome() {
         return $this->Cognome;
     }
-
+   /**
+    * 
+    * @param string $Cognome
+    */
     public function setCognome($Cognome) {
         $this->Cognome = $Cognome;
     }
-
+/**
+ * 
+ * @return string
+ */
     public function getUsername() {
         return $this->Username;
     }
-
+/**
+ * 
+ * @param string $Username
+ */
     public function setUsername($Username) {
         $this->Username = $Username;
     }
-
+/**
+ * 
+ * @return string
+ */
     public function getPassword() {
         return $this->Password;
     }
-
+/**
+ * 
+ * @param string $Password
+ */
     public function setPassword($Password) {
         $this->Password = $Password;
     }
-
+/**
+ * 
+ * @return string
+ */
     public function getEmail() {
         return $this->email;
     }
-
+/**
+ * 
+ * @param string $email
+ */
     public function setEmail($email) {
         $this->email = $email;
     }
-
+/**
+ * 
+ * @return array
+ */
     public function getProdottiOsservati() {
         return $this->ProdottiOsservati;
     }
-
+/**
+ * 
+ * @param array $ProdottiOsservati
+ */
     public function setProdottiOsservati($ProdottiOsservati) {
         $this->ProdottiOsservati = $ProdottiOsservati;
     }
-
-
-    
+  
 }
 
 ?>
