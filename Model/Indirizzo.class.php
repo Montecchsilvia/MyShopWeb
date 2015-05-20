@@ -1,7 +1,7 @@
 <?php
 
 
-class IndirizzoSupermarket {
+class Indirizzo {
      
 private $Via;
 private $Città;
